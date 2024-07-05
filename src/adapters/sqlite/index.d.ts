@@ -91,6 +91,8 @@ export default class SQLiteAdapter implements DatabaseAdapter {
 
   setLocal(key: string, value: string, callback: ResultCallback<void>): void
 
+  loadOrSaveDb(filePath: string, isSave: Boolean): Promise<void>
+
   removeLocal(key: string, callback: ResultCallback<void>): void
 
   _encodedSchema(): SQL

@@ -52,6 +52,8 @@ export default class DatabaseAdapterCompat {
 
   removeLocal(key: string): Promise<void>
 
+  loadOrSaveDb(filePath: string, isSave: boolean): Promise<void>
+
   // untyped - test-only code
   testClone(options: any): Promise<any>
 }

@@ -47,6 +47,7 @@ export type SqliteDispatcherMethod =
   | 'unsafeResetDatabase'
   | 'getLocal'
   | 'unsafeExecuteMultiple'
+  | 'loadOrSaveDb'
 
 export interface SqliteDispatcher {
   call(methodName: SqliteDispatcherMethod, args: any[], callback: ResultCallback<any>): void;

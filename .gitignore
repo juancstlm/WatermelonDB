@@ -15,6 +15,7 @@ coverage/
 
 .vscode
 .idea
+.history
 
 docs-build/
 

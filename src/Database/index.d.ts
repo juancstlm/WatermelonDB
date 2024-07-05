@@ -88,6 +88,9 @@ export default class Database {
   // Yes, this sucks and there should be some safety mechanisms or warnings. Please contribute!
   unsafeResetDatabase(): Promise<void>
 
+  writeToFile(filePath: string): Promise<void>
+  readFromFile(filePath: string): Promise<void>
+
   _ensureInWriter(diagnosticMethodName: string): void
 
   // (experimental) puts Database in a broken state
